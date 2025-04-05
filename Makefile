@@ -1,9 +1,9 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c11 -g
 
-SRC = chunk.c main.c memory.c debug.c
+SRC = chunk.c main.c memory.c debug.c value.c vm.c
 OBJ = $(SRC:.c=.o)
-DEPS = chunk.h common.h memory.h debug.h
+DEPS = chunk.h common.h memory.h debug.h value.h vm.h
 
 TARGET = main
 
